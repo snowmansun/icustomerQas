@@ -162,7 +162,6 @@
     <Content Include="public\img\tick.png" />
     <Content Include="public\img\upload-log.png" />
     <Content Include="public\stylesheets\style.styl" />
-    <Content Include="README.md" />
     <Content Include="typings.json" />
     <Content Include="views\index.jade" />
     <Content Include="views\layout.jade" />
