@@ -1,0 +1,16 @@
+﻿{
+  "conString": "Server=tcp:ga98eyp2ih.database.chinacloudapi.cn,1433;Database=ICustomer;User ID=ebestmobile;Password=Sharepoint@admin;Trusted_Connection=False;Encrypt=True;Connection Timeout=30000;"
+  //"user": "ebestmobile",
+  //"password": "Sharepoint@admin",
+  //"server": "ga98eyp2ih.database.chinacloudapi.cn",
+  //"database": "CCEJ_COKE1",
+  //"port": "1433",
+  //"options": {
+  //  "encrypt": false // Use this if you're on Windows Azure
+  //},
+  //"pool": {
+  //  "min": "0",
+  //  "max": "10",
+  //  "idleTimeoutMillis": "10000"
+  //}
+}

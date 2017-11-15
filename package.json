@@ -1,0 +1,35 @@
+{
+  "name": "i-customer",
+  "version": "0.0.0",
+  "private": true,
+  "engines": {
+    "node": "6.9.1"
+  },
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "description": "iCustomer",
+  "author": {
+    "name": "Kris He"
+  },
+  "dependencies": {
+    "async": "^2.1.4",
+    "body-parser": "~1.8.1",
+    "config": "^1.24.0",
+    "cookie-parser": "~1.3.3",
+    "crypto": "0.0.3",
+    "debug": "~2.0.0",
+    "express": "~4.9.0",
+    "jade": "~1.6.0",
+    "morgan": "~1.3.0",
+    "mssql": "^3.3.0",
+    "node-uuid": "^1.4.7",
+    "pg": "^6.1.0",
+    "q": "^1.4.1",
+    "request": "^2.81.0",
+    "serve-favicon": "~2.1.3",
+    "silly-datetime": "^0.1.2",
+    "stylus": "0.42.3",
+    "twilio": "^3.5.0"
+  }
+}

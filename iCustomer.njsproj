@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>iCustomer</Name>
+    <RootNamespace>iCustomer</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>297c153e-49aa-448a-8cb9-7e53fc33785f</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>bin\www</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <ProjectView>ProjectFiles</ProjectView>
+    <NodejsPort>1337</NodejsPort>
+    <StartWebBrowser>true</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="app.js" />
+    <Compile Include="comm\validate_params.js" />
+    <Compile Include="db\db.js" />
+    <Compile Include="db\dbHelper.js" />
+    <Compile Include="models\product.js" />
+    <Compile Include="routes\auth.js" />
+    <Compile Include="routes\contact.js" />
+    <Compile Include="routes\index.js" />
+    <Compile Include="routes\order.js" />
+    <Compile Include="routes\photo.js" />
+    <Compile Include="routes\product.js" />
+    <Compile Include="routes\outlet.js" />
+    <Compile Include="bin\www" />
+    <Compile Include="routes\register.js" />
+    <Compile Include="routes\SMSAPI.js" />
+    <Content Include="config.json" />
+    <Content Include="config\default.json" />
+    <Content Include="package.json" />
+    <Content Include="Procfile" />
+    <Content Include="public\themes\default\css\ionic.app.css" />
+    <Content Include="public\themes\default\img\%40.png" />
+    <Content Include="public\themes\default\img\add.png" />
+    <Content Include="public\themes\default\img\address.png" />
+    <Content Include="public\themes\default\img\back.png" />
+    <Content Include="public\themes\default\img\bar-circle.png" />
+    <Content Include="public\themes\default\img\bkhm.jpg" />
+    <Content Include="public\themes\default\img\calander.png" />
+    <Content Include="public\themes\default\img\cancel.png" />
+    <Content Include="public\themes\default\img\close.png" />
+    <Content Include="public\themes\default\img\cocacola.gif" />
+    <Content Include="public\themes\default\img\coca_cola_red.jpg" />
+    <Content Include="public\themes\default\img\delete.png" />
+    <Content Include="public\themes\default\img\edit.png" />
+    <Content Include="public\themes\default\img\ellipsis.png" />
+    <Content Include="public\themes\default\img\fanta_apple.png" />
+    <Content Include="public\themes\default\img\fanta_orange.jpg" />
+    <Content Include="public\themes\default\img\feedback.png" />
+    <Content Include="public\themes\default\img\head-bg.png" />
+    <Content Include="public\themes\default\img\head-logo.png" />
+    <Content Include="public\themes\default\img\icon_head.png" />
+    <Content Include="public\themes\default\img\icon_password.png" />
+    <Content Include="public\themes\default\img\icon_username.png" />
+    <Content Include="public\themes\default\img\ionic.png" />
+    <Content Include="public\themes\default\img\list.png" />
+    <Content Include="public\themes\default\img\login_bg.jpg" />
+    <Content Include="public\themes\default\img\login_logo.png" />
+    <Content Include="public\themes\default\img\logo.png" />
+    <Content Include="public\themes\default\img\logout.png" />
+    <Content Include="public\themes\default\img\mainpage1.png" />
+    <Content Include="public\themes\default\img\mainpage2.png" />
+    <Content Include="public\themes\default\img\mainpage3.png" />
+    <Content Include="public\themes\default\img\main_logo.png" />
+    <Content Include="public\themes\default\img\main_slide1.png" />
+    <Content Include="public\themes\default\img\menu.png" />
+    <Content Include="public\themes\default\img\message.png" />
+    <Content Include="public\themes\default\img\minus.png" />
+    <Content Include="public\themes\default\img\Network.png" />
+    <Content Include="public\themes\default\img\new-order.png" />
+    <Content Include="public\themes\default\img\order-history.png" />
+    <Content Include="public\themes\default\img\order_product1.png" />
+    <Content Include="public\themes\default\img\order_product2.png" />
+    <Content Include="public\themes\default\img\order_product3.png" />
+    <Content Include="public\themes\default\img\outlet-profile.png" />
+    <Content Include="public\themes\default\img\password.png" />
+    <Content Include="public\themes\default\img\phone.png" />
+    <Content Include="public\themes\default\img\picture.png" />
+    <Content Include="public\themes\default\img\profile.png" />
+    <Content Include="public\themes\default\img\red-circle.png" />
+    <Content Include="public\themes\default\img\search.png" />
+    <Content Include="public\themes\default\img\shopping-car.png" />
+    <Content Include="public\themes\default\img\sprite.jpg" />
+    <Content Include="public\themes\default\img\survey.png" />
+    <Content Include="public\themes\default\img\system.png" />
+    <Content Include="public\themes\default\img\tick-gray.png" />
+    <Content Include="public\themes\default\img\tick.png" />
+    <Content Include="public\themes\default\img\upload-log.png" />
+    <Content Include="public\img\add.png" />
+    <Content Include="public\img\address.png" />
+    <Content Include="public\img\back.png" />
+    <Content Include="public\img\bar-circle.png" />
+    <Content Include="public\img\bkhm.jpg" />
+    <Content Include="public\img\calander.png" />
+    <Content Include="public\img\cancel.png" />
+    <Content Include="public\img\close.png" />
+    <Content Include="public\img\cocacola.gif" />
+    <Content Include="public\img\coca_cola_red.jpg" />
+    <Content Include="public\img\delete.png" />
+    <Content Include="public\img\edit.png" />
+    <Content Include="public\img\ellipsis.png" />
+    <Content Include="public\img\fanta_apple.png" />
+    <Content Include="public\img\fanta_orange.jpg" />
+    <Content Include="public\img\feedback.png" />
+    <Content Include="public\img\head-bg.png" />
+    <Content Include="public\img\head-logo.png" />
+    <Content Include="public\img\icon_head.png" />
+    <Content Include="public\img\icon_password.png" />
+    <Content Include="public\img\icon_username.png" />
+    <Content Include="public\img\ionic.png" />
+    <Content Include="public\img\list.png" />
+    <Content Include="public\img\login_bg.jpg" />
+    <Content Include="public\img\login_logo.png" />
+    <Content Include="public\img\logo.png" />
+    <Content Include="public\img\logout.png" />
+    <Content Include="public\img\mainpage1.png" />
+    <Content Include="public\img\mainpage2.png" />
+    <Content Include="public\img\mainpage3.png" />
+    <Content Include="public\img\main_logo.png" />
+    <Content Include="public\img\main_slide1.png" />
+    <Content Include="public\img\menu.png" />
+    <Content Include="public\img\message.png" />
+    <Content Include="public\img\minus.png" />
+    <Content Include="public\img\Network.png" />
+    <Content Include="public\img\new-order.png" />
+    <Content Include="public\img\order-history.png" />
+    <Content Include="public\img\order_product1.png" />
+    <Content Include="public\img\order_product2.png" />
+    <Content Include="public\img\order_product3.png" />
+    <Content Include="public\img\outlet-profile.png" />
+    <Content Include="public\img\password.png" />
+    <Content Include="public\img\phone.png" />
+    <Content Include="public\img\picture.png" />
+    <Content Include="public\img\profile.png" />
+    <Content Include="public\img\red-circle.png" />
+    <Content Include="public\img\search.png" />
+    <Content Include="public\img\shopping-car.png" />
+    <Content Include="public\img\sprite.jpg" />
+    <Content Include="public\img\survey.png" />
+    <Content Include="public\img\system.png" />
+    <Content Include="public\img\tick-gray.png" />
+    <Content Include="public\img\tick.png" />
+    <Content Include="public\img\upload-log.png" />
+    <Content Include="public\stylesheets\style.styl" />
+    <Content Include="README.md" />
+    <Content Include="typings.json" />
+    <Content Include="views\index.jade" />
+    <Content Include="views\layout.jade" />
+    <Content Include="views\error.jade" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\" />
+    <Folder Include="config\" />
+    <Folder Include="filter\" />
+    <Folder Include="db\" />
+    <Folder Include="models\" />
+    <Folder Include="comm\" />
+    <Folder Include="public\" />
+    <Folder Include="public\img\" />
+    <Folder Include="public\themes\default\css\" />
+    <Folder Include="public\themes\default\img\" />
+    <Folder Include="public\javascripts\" />
+    <Folder Include="public\themes\" />
+    <Folder Include="public\stylesheets\" />
+    <Folder Include="public\themes\default\" />
+    <Folder Include="routes\" />
+    <Folder Include="typings\" />
+    <Folder Include="typings\globals\" />
+    <Folder Include="typings\globals\async\" />
+    <Folder Include="typings\globals\body-parser\" />
+    <Folder Include="typings\globals\config\" />
+    <Folder Include="typings\globals\cookie-parser\" />
+    <Folder Include="typings\globals\debug\" />
+    <Folder Include="typings\globals\express-serve-static-core\" />
+    <Folder Include="typings\globals\express\" />
+    <Folder Include="typings\globals\jade\" />
+    <Folder Include="typings\globals\mime\" />
+    <Folder Include="typings\globals\morgan\" />
+    <Folder Include="typings\globals\msnodesql\" />
+    <Folder Include="typings\globals\node-uuid\" />
+    <Folder Include="typings\globals\node\" />
+    <Folder Include="typings\globals\pg\" />
+    <Folder Include="typings\globals\q\" />
+    <Folder Include="typings\globals\serve-favicon\" />
+    <Folder Include="typings\globals\serve-static\" />
+    <Folder Include="typings\globals\stylus\" />
+    <Folder Include="typings\globals\uuid\" />
+    <Folder Include="views\" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="typings\globals\async\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\body-parser\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\config\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\cookie-parser\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\debug\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\express-serve-static-core\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\express\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\jade\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\mime\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\morgan\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\msnodesql\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\node-uuid\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\node\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\pg\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\q\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\serve-favicon\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\serve-static\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\stylus\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\uuid\index.d.ts" />
+    <TypeScriptCompile Include="typings\index.d.ts" />
+  </ItemGroup>
+  <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
