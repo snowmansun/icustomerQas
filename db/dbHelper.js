@@ -2,7 +2,7 @@
 var config = require("config");
 var dbHelper = {};
 
-var conString = 'Server=tcp:ga98eyp2ih.database.chinacloudapi.cn,1433;Database=ICustomer;User ID=ebestmobile;Password=Sharepoint@admin;Trusted_Connection=False;Encrypt=True;Connection Timeout=30000;';
+var conString = 'Server=tcp:ga98eyp2ih.database.chinacloudapi.cn,1433;Database=eBestStaging;User ID=ebestmobile;Password=Sharepoint@admin;Trusted_Connection=False;Encrypt=True;Connection Timeout=30000;';
 //执行sql,返回数据.  
 dbHelper.query = function (sql, callBack) {
     console.log('[SQL:]', sql, '[:SQL]');
