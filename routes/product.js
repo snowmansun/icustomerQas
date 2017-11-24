@@ -156,7 +156,7 @@ router.get('/attr', function (req, res) {
 /* call PE get base price */
 var getBasePrice = function (cust_code, callback) {
     var post_options = {
-        url: 'http://ebesticustomercouch.chinacloudapp.cn/Pricing.svc/GetBasePriceInfoByCusProd',
+        url: 'http://pricingcalcserviceqas.chinacloudsites.cn/pricingCalc.svc/GetBasePriceInfoByCusProd',
         method: 'POST',
         json: true,
         body: { "customerCode": cust_code, "products": [] }
