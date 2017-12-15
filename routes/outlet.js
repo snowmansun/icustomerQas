@@ -18,7 +18,7 @@ router.get('/info', function (req, res) {
         '    ct.phone as tel, ' +
         '    at.ebmobile__address__c as address, ' +
         '    at.ebmobile__deliverydays__c as delivery_day, ' +
-        '    \'CS\' as order_unit ' +
+        '    \'EA\' as order_unit ' +
         'from account at ' +
         'inner join contact ct on at.id = ct.accountid and ct.ebmobile__primary__c = 1 ' +
         'where at.isdeleted=0 and ct.isdeleted=0 and at.accountnumber=\'' + req.query.accountnumber + '\'';

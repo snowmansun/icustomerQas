@@ -19,7 +19,7 @@ router.get('/list', function (req, res) {
         ' SELECT ROW_NUMBER() OVER(order by a.ishistorysku desc,a.ismusttohave desc,a.seq_category,a.seq_package,a.seq_brand,a.code) seq,* ' +
         ' FROM (SELECT' +
         '   productcode AS code,' +
-        '   p.description AS name,' +
+        '   p.name AS name,' +
         '   isnull(p.ebMobile__Category__c,\'\') as category,' +
         '   ebmobile__flavor__c AS flavor,' +
         '   ebmobile__pack__c AS package,' +
