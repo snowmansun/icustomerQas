@@ -88,7 +88,7 @@ router.get('/smscodecheck', function (req, res) {
     dbHelper.query(sql, function (err, result) {
         if (err || result.length <= 0) {
             var res_json = {
-                status: false
+                status: true
             };
             res.json(res_json);
         }
